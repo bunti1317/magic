@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link href="index.css">
+        <style>
+            *{
+                font-family: "Roboto";
+            }
+            body{
+                height: 100vh;
+                margin: 0%;
+                padding: 0%;
+                background-color: #020e26;
+            }
+            .container
+            {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                perspective: 90rem;
+                perspective-origin: 30% 60%;
+            }
+            .div-transform
+            {
+                display: flex;
+                transform: rotateX('10deg') rotateY('15deg') rotateZ('-9deg') scale3d(1, 1, -0.9);
+                    scale: 1.1;
+                    translateX:50px ;
+            }
+            .card
+            {
+                background: url("image.jpg") center;
+                color: #ffffffff;
+                border-radius: 8px;
+                padding: 0px 18px;
+                width: 244px;
+                transition: 0.5s ease;
+                overflow: hidden;
+                transform: translate(0);
+            }
+            .card::before
+            {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                opacity: 0.85;
+            }
+            .card h2{
+                text-transform: capitalize;        
+            }
+           .card h4{
+            text-transform: uppercase;
+           } 
+            .card-1{
+                background-size: cover;
+                transform: scale(1.02);
+                margin-right: 40px;
+            }
+            .card-1:hover{
+                transform: scale(1.11);
+                box-shadow: -7px 4px 28px -3px #b527cf;
+            }
+            .card-1::before{
+                background: linear-gradient(90deg, #b527cf 0%,#3546f0 100%);
+            }
+            .card-2{
+                background-size: cover;
+                transform: scale(1.01);
+                margin-right: 31px;
+            }
+            .card-2:hover{
+                transform: scale(1.11);
+                box-shadow: -7px 4px 28px -3px #3bd9d9;
+            }
+            .card-2::before{
+                background: linear-gradient(90deg, #3bd9d9 0%,#8035f0 100%);
+            }
+            .card-3{
+                background-size: cover;
+            }
+            .card-3:hover{
+                transform: scale(1.11);
+                box-shadow: -7px 4px 28px -3px #ff9500;
+            }
+            .card-3::before{
+                background: linear-gradient(90deg,#ff9500 0%,#d5cb0f 100%);
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div-transform">
+                <div class="card card-1">
+                    <h2>Kanishk Jadhav </h2>
+                    <p>
+                        The Joker is noted for his clownlike apperance and sick humour.
+                   The Joker,initially portrayed as a small-time crok,was disfigured 
+                   and driven insane by an accident with toxic chemicals.He was 
+                   depicated with toxic chemicals.He was depictedwith chalk-white skin, 
+                   ruby-red lips permanently fixed in a demonic grin,and bright 
+                   green hair. 
+                </p>
+                <h4>Element</h4>
+                </div>
+                <div class="card card-2">
+                    <h2>Badal Jadhav</h2>
+                    <p>
+                     A king is a man who rules a country,because of inheritance.
+                     A king usually comes to power when the previous monarch dies,
+                     who is usually a family member of his.Sometimes a person may
+                    become king due to the previous monarch's abdication, for
+                    example George VI. King is a main body of kingdom.
+                    KING IS KING.
+                    </p>
+                    <h4>Component</h4>
+                </div>
+                <div class="card card-3">
+                    <h2>Bunty Jadhav</h2>
+                    <p>
+                    In games based on numerical value,the ace normally counts 1, 
+                    as in cribbage,or 11, as an option in blackjack.In games based 
+                    on arrranging cards into ordered series, such a rummy,it may 
+                    count either high or low or even both (as in a "round-the-corner"
+                    sequence such as Q-K-A-2-3).Ace can be change the game by
+                    its one moment.
+                    </p>
+                <h4>Gradient</h4>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>
